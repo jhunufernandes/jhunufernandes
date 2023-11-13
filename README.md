@@ -26,8 +26,8 @@ class Databases:
 
 
 class Extras:
-    also_work_with: ["RabbitMQ", "MQTT"]
+    also_work_with = ["RabbitMQ", "MQTT"]
+    major_clouds = ["AWS", "GCP"]
     current_project = Sthali  # see my repos
-
     
 ```
