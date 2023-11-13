@@ -15,4 +15,19 @@ class JhunuFernandes:
     def greet(self):
         print(f"Lets drink a {self.drink} someday!")
 
+
+class Languages:
+    favorites = ["Python", "JS"]
+    frameworks = ["Flask", "FastAPI", "Airflow", "React"]
+
+
+class Databases:
+    experience_with = ["Postgres", "Mongo", "Dynamo", "Redis"]
+
+
+class Extras:
+    also_work_with: ["RabbitMQ", "MQTT"]
+    current_project = Sthali  # see my repos
+
+    
 ```
