@@ -4,25 +4,34 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 
+from datetime import datetime
+from enum import StrEnum
 
 class JhunuFernandes:
-    full_name = "Jhunu Fernandes"
+    full_name = "Jhunu Fernandes Araujo"
     current_role = "Software Engineer"
 
-    def __init__(self, drink: Literal["Beer", "Coffee"]):
-        self.drink = drink
-
     def greet(self):
+        now = datetime.now()
+        drink = ("Cofee", "Beer")[now.hour >= 12]
         print(f"Lets drink a {self.drink} someday!")
 
 
-class Languages:
-    favorites = ["Python", "JS"]
-    frameworks = ["Flask", "FastAPI", "Airflow", "React"]
+class Databases(StrEnum):
+    POSTGRES = "Postgres"
+    MONGO = "Mongo"
+    DYNAMO = "Dynamo"
+    REDIS = "Redis"
 
 
-class Databases:
-    experience_with = ["Postgres", "Mongo", "Dynamo", "Redis"]
+languages_and_frameworks = {
+    "python": [
+        "Flask", "FastAPI", "Airflow"
+    ],
+    "js": [
+        "React"   
+    ],
+}
 
 
 class Extras:
